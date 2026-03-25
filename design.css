@@ -1,0 +1,257 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    color: #7b1a1a;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Top Header */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo img {
+    height: 80px;
+}
+
+/* Navigation */
+nav {
+    flex: 1;
+    margin: 0 30px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f48249;
+    color: white;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #d35417;
+}
+
+/* Nav Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Account Links */
+.account-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #222;
+    font-weight: semi-bold;
+}
+
+/* Bottom Header */
+.header-bottom {
+    background-color: #fafafa;
+    padding: 10px 30px;
+    border-top: 1px solid #eee;
+}
+
+.header-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-bottom a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background-color: #fff3e8;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    background-color: #f67c3f;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #bc4914;
+}
+
+/* ================= FEATURED ================= */
+.featured {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.featured h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.featured ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featured li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.featured li:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.featured h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.featured p {
+    color: #fa6c25;
+    font-weight: bold;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #f7c22f;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+}
+
+.footer-top {
+    padding: 20px 30px;
+}
+
+.footer-top ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-top a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #f9b837;
+    font-size: 14px;
+    color: #777;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .featured li {
+        width: calc(50% - 20px);
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured li {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
